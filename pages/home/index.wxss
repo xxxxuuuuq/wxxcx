@@ -1,0 +1,95 @@
+.search{
+  display: flex;
+  flex-direction: row;
+  height: 60rpx;
+  padding: 20rpx;
+}
+.search .scan{
+  width:10%;
+  display: flex;
+  align-items: center;
+}
+.search .search-input{
+  padding: 5rpx;
+  background-color: #fff;
+  width: 89%;
+  height: 100%;
+  border-radius: 10rpx;
+  display: flex;
+  align-items: center;
+}
+.search-input input{
+  padding: 10rpx 30rpx;
+
+}
+.search-icon{
+  width: 30rpx;
+  height: 30rpx;
+}
+.widgets-img{
+  width: 40rpx;
+  height: 40rpx;
+}
+.swiper-item{
+  display: block;
+  width: 100%;
+  height: 325rpx;
+}
+.big-logo{
+  display: flex;
+  flex-wrap: wrap;
+  background-color:#fff;
+  padding-top: 20rpx;
+
+}
+.logoinfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150rpx;
+  height: 150rpx;
+
+}
+.logotext{
+  color: #aaa;
+  font-size: 22rpx;
+}
+.content-scro{
+  width: 100%;
+  height: 1334rpx;
+  margin-top:20rpx;
+}
+.page-margin{
+  padding:20rpx;
+  margin-top: 20rpx;
+  background-color: ffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.theme_img{width: 180rpx;height: 40rpx;}
+.theme_more{height: 40rpx;}
+.theme_more text{
+  font-size: 22rpx;color: aaa;margin-right: 2px;
+}
+.theme_more image{width: 22rpx;height: 22rpx;}
+.page-row{width: 100%; display: flex;align-items: center;justify-content: space-between;}
+.theme_scroll{
+  width: 100%;margin-top: 10rpx;white-space: nowrap;
+}
+.page-colum{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20rpx;
+}
+.page-colum image{
+  width: 170rpx;
+  height: 170rpx;
+}
+.page-colum text{
+  font-size: 32rpx;
+  color:#c22222;
+  margin-top: 10rpx;
+  
+}

@@ -1,0 +1,40 @@
+<!--pages/detail/index.wxml-->
+<!-- <text>pages/detail/index.wxml</text> -->
+<view class="detail">
+<!-- 轮播图 -->
+  <view class="mod_slider">
+    <swiper 
+    indicator-dots="{{true}}"
+    indicator-color="rgb(255,255,255, .6)"
+    indicator-active-color="#e93b3d"
+    style="width: 100%;height: 820rpx;"
+    >
+      <swiper-item wx:for="{{partData.loopImgUrl}}" wx:key="index">
+        <image class="swiper-item" src="{{item}}" mode=""/>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 商品信息 -->
+  <view class="buy_area">
+    <view class="textWrap">
+      <text>{{partData.title}}</text>
+    </view>
+    <view class="priceWrap">
+      <text>￥{{partData.price}}</text>
+    </view>
+  </view>
+  <!-- 支付  -->
+  <infocell title="支付" desc="{{baitiaoSelectItem.desc}}" bind:popView="popBaitiaoView"></infocell>
+  <!-- 已选 -->
+  <infocell title="已选" desc="{{partData.count}}" bind:popView="popbuyView"></infocell>
+
+  <!-- 白条弹窗 -->
+  <iou baitiao="{{baitiao}}" hideBaitiao="{{hideBaitiao}}" bind:popView="popBaitiaoView" bind:updateBaitiao="updateBaitiao" bind:undateSelect="undateSelectItem"></iou>
+  <!-- 支付弹框 -->
+  <buy 
+  partData="{{partData}}" 
+  hideBuy="{{hideBuy}}" 
+  bind:popView="popbuyView" 
+  bind:onGetCount="onGetCount">
+  </buy>
+</view>
